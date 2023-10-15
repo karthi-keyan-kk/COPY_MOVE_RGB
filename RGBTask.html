@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style/RGBTask.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inner-container">
+            <div class="input-field">
+                <input id="RGB-value" type="text" readonly>
+                <button onclick="add()">Add</button>
+            </div>
+            <div id="color-palette">
+                
+            </div>
+            <div id="generateBtn">
+                <button id="generate" onclick="generate()">Generate</button>
+            </div>
+            <div>
+                <table id="RBG-table">
+                    <thead>
+                        <tr>
+                            <th>RED</th>
+                            <th>GREEN</th>
+                            <th>BLUE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            <div id="sortBtn">
+                <button onclick="sortTable(0)">Sort Red</button>
+                <button onclick="sortTable(1)">Sort Green</button>
+                <button onclick="sortTable(2)">Sort Blue</button>
+            </div>
+            <div>
+                <input id="copy-input-1" type="text">
+                <input id="copy-input-2" type="text">
+            </div>
+            <div>
+                <button onclick="copy()" id="copy">Copy</button>
+            </div>
+            <div>
+                <input id="move-input-1" type="text">
+                <input id="move-input-2" type="text">
+            </div>
+            <div>
+                <button onclick="move()" id="move">Move</button>
+            </div>
+        </div>
+        <div class="col-2">
+            <div>
+                <h1>Copy Table</h1>
+                <table id="copy-table">
+                    <thead>
+                        <tr>
+                            <td>Red</td>
+                            <td>Green</td>
+                            <td>Blue</td>
+                        </tr>
+                    </thead>
+                    <tbody id="copy-table-body">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-3">
+            <div>
+                <h1>Move Table</h1>
+                <table id="move-table">
+                    <thead>
+                        <tr>
+                            <td>Red</td>
+                            <td>Green</td>
+                            <td>Blue</td>
+                        </tr>
+                    </thead>
+                    <tbody id="move-table-body">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./JS/RGBTask.js"></script>
+</body>
+</html>

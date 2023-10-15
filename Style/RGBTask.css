@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 20px;
+}
+
+.inner-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inner-container div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+table{
+    border: solid black 1px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+tr, th, td{
+    border: solid 1px black;
+    padding: 20px;
+}
+
+input{
+    width: 125px;
+    height: 25px;
+    padding-left: 14px;
+    border-radius: 5px;
+    border: none;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.input-field button:nth-child(2){
+    margin-left: 10px;
+    width: 50px;
+    height: 28px;
+}
+
+#generateBtn{
+    margin-top: 5px;
+}
+
+#generate{
+    width: 75px;
+    height: 30px;
+}
+
+#copy{
+    width: 60px;
+    height: 25px;
+}
+
+#move{
+    width: 60px;
+    height: 25px;
+}
+
+.inner-container div:nth-child(2){
+    width: 70px;
+    height: 30px;
+    background-color: white;
+}
+
+.inner-container div:nth-child(6) input{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.inner-container div:nth-child(7){
+    margin-top: -5px;
+    margin-left: 10px;
+}
+
+.inner-container div:nth-child(8) input{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.inner-container div:nth-child(9){
+    margin-top: -5px;
+    margin-left: 10px;
+}
+
+#sortBtn button{
+    width: 90px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.col-2, .col-3{
+    display: flex;
+    justify-content: center;
+}
